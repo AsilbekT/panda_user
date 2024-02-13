@@ -160,7 +160,7 @@ async def delete_profile(token: str = Depends(get_token_from_header), db: AsyncS
     # Decode token to get username
     token_data = decode_jwt_token(token)
     username = token_data['username']
-
+    
     # Fetch the user profile
     result = await db.execute(select(UserProfile).filter(UserProfile.username == username))
     db_profile = result.scalar_one_or_none()

@@ -1,2 +1,0 @@
-export DB_CONNECTION_STRING=postgresql+asyncpg://asilbek:Asilbek2001@localhost/panda_profile
-export SECRET_KEY=VpwI_yUDuQuhA1VEB0c0f9qki8JtLeFWh3lA5kKvyGnHxKrZ-M59cA
